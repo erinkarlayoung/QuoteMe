@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Totally Legitimate Blog!</title>
+    <meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bellefair|Cinzel|Courgette|Gudea|Permanent+Marker|Poiret+One|Quicksand|Raleway|Oswald" rel="stylesheet">
+	<link rel="stylesheet" href="/stylesheets/application.css" type="text/css">
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+    <h1>Totally Legitimate Blog!</h1>
+    <h2>Social media is a thinly-veiled venue for narcissists to humble-brag or be passive-aggressive and vague! We remove that veil. Brag. Vent. Make everyone in your life wonder about your mental state.</h2>
+    <div class= "container">
+        <a href="/signup">Sign Up</a>
+        <a href="/login">Login</a>
+        <a href="/">Home</a>
+        <a href="/logout">Log Out</a>
+    </div>
+  </body>
+</html>
