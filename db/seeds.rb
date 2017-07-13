@@ -7,16 +7,24 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create([
-	{fname: 'Erin', lname: 'Young', email: 'erinkarlayoung@gmail.com', password: '12345678'}
-	{fname: 'Danny', lname: 'Devito', email: 'danny@gevito.com', password: 'password'}
-	{fname: 'LeBron', lname: 'James', email: 'lebron@me.com', password: 'narcissism'}
+	{fname: 'Erin', lname: 'Young', email: 'erin@me.com', password: '12345678'},
+	{fname: 'Anonymous', lname: 'User', email: 'anon@me.com', password: 'password'},
+	{fname: 'John Q', lname: 'Public', email: 'john@me.com', password: 'narcissism'},
+	{fname: 'Joe', lname: 'Everyman', email: 'joe@me.com', password:'negitivity'},
+	{fname: 'HereTo', lname: 'TrollEveryond', email: 'troll@me.com', password: 'trolling'}
 	])
 
-Post.create([
-	{user_id:_ , title: 'My Life is Falling Apart', body: 'life is a bleak abyss and I am being enveloped by the void.'}])
+Post.create([          
+	{user_id: 1, title: 'Kerouac', body: 'I like too many things and get all confused and hung-up running from one falling star to another till I drop. This is the night, what it does to you. I had nothing to offer anybody except my own confusion.- Jack Kerouac, On The Road'},          
+	{user_id: 4, title: 'I like this one...', body: 'Do not mind anything that anyone tells you about anyone else. Judge everyone and everything for yourself.- Henry James'},
+	{user_id: 5, title: 'You know who has good quotes?', body: 'Your mom!'},
+	{user_id: 3, title: 'Song quote', body: 'This is a quote. I am not being terribly creative right now'}
+	])
 
-Comments.create([
-	{user_id: 2, post_id: 1, body: 'Yeah, you are a shitshow.'}
-	{user_id: 3, post_id: 1, body: 'Better than having your teammate hit it with your mom'}
-	{user_id: 1, post_id: 1, body: 'Would you rather it have been Kevin Durant? He scores on you, so why not your mom?'}
+
+Comment.create([
+	{user_id: 2, post_id: 1, body: 'Random Comment.'},
+	{user_id: 3, post_id: 1, body: 'What chapter?'},
+	{user_id: 5, post_id: 1, body: 'Trolling'},
+	{user_id: 2, post_id: 2, body: 'Source?'},
 	])

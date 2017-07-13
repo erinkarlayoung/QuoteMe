@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Totally Legitimate Blog!</title>
+    <title>Quotes</title>
     <meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bellefair|Cinzel|Courgette|Gudea|Permanent+Marker|Poiret+One|Quicksand|Raleway|Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bellefair|Cinzel|Courgette|Gudea|Permanent+Marker|Poiret+One|Quicksand|Raleway|Oswald|Lobster" rel="stylesheet">
 	<link rel="stylesheet" href="/stylesheets/application.css" type="text/css">
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
 
   <body>
-    <%= yield %>
-    <h1>Totally Legitimate Blog!</h1>
-    <h2>Social media is a thinly-veiled venue for narcissists to humble-brag or be passive-aggressive and vague! We remove that veil. Brag. Vent. Make everyone in your life wonder about your mental state.</h2>
-    <div class= "container">
+<!--      <div id="leftquote">
+      <img src="/assets/Quotes.png">
+    </div> -->
+    <div id="box">
+      <h1>Quote Me</h1>
+      <h3>A simple place to collect and share your favorite literary quotes, song lyrics, movie lines, and more.</h3>
+      <%= yield %>
+      <div class= "container">
         <a href="/signup">Sign Up</a>
         <a href="/login">Login</a>
         <a href="/">Home</a>
         <a href="/logout">Log Out</a>
+      </div>
     </div>
+<!--     <div id="rightquote">
+      <img src="/assets/Quotes_right.png">
+    </div> -->
   </body>
 </html>

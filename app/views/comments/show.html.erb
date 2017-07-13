@@ -7,12 +7,12 @@
 
 <p>
   <strong>User:</strong>
-  <%= @comment.user %>
+  <%= @comment.user.fname %>
 </p>
 
 <p>
   <strong>Post:</strong>
-  <%= @comment.post %>
+  <%= @comment.post.title %>
 </p>
 
 <%= link_to 'Edit', edit_comment_path(@comment) %> |

@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Comments</h1>
+<h2>Comments</h2>
 
 <table>
   <thead>
@@ -16,8 +16,8 @@
     <% @comments.each do |comment| %>
       <tr>
         <td><%= comment.body %></td>
-        <td><%= comment.user %></td>
-        <td><%= comment.post %></td>
+        <td><%= comment.user.fname %></td>
+        <td><%= comment.post.title %></td>
         <td><%= link_to 'Show', comment %></td>
         <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
         <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>

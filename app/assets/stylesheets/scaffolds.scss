@@ -1,16 +1,56 @@
 body {
-  background-color: #fff;
-  color: #333;
-  margin: 33px;
-  font-family: verdana, arial, helvetica, sans-serif;
+  margin: auto;
+  font-family: "Raleway";
   font-size: 13px;
   line-height: 18px;
+  width: 1000px;
+  background-image: url(/assets/crumpled-paper.jpg);
+  background-repeat: none;
 }
 
+// #leftquote {
+//   align-content: left;
+// }
+
+#rightquote {
+  float: right;
+}
+#box {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+h1 {
+  font-family: "Lobster";
+  font-size: 120px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+h2 {
+  font-family: "Lobster";
+  font-size: 40px;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Raleway";
+  font-size: 18px;
+  text-align: center;
+}
+
+table {
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: "Raleway";
   font-size: 13px;
   line-height: 18px;
+  text-align: left;
+  margin: auto;
+  padding: 10px;
 }
 
 pre {
