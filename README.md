@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Quote Me is a simple blogging app built with Ruby on Rails to allow users to share their favorite literary and song quotes.
+I am not good at writing READMEs yet. So, to entertain you, here is a haiku about this app.
 
-Things you may want to cover:
 
-* Ruby version
+A Quote Me README
+Ruby, HTML, and sass
+Ruby 2.4.1
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

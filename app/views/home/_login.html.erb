@@ -1,0 +1,11 @@
+<% if @current_user %>
+	<%= link_to 'Profile', @current_user %> | <%= link_to 'logout', logout_path %>
+<% else %>
+	<%= form_tag login_path do %>
+		<%= label_tag :email %>
+		<%= text_field_tag :email %>
+		<%= label_tag :password %>
+		<%= password_field_tag :password %>
+	<%= submit_tag 'login' %>
+	<% end %>
+<% end %>
